@@ -2,6 +2,6 @@
 
 curl -L https://fly.io/install.sh | sh
 
-echo "FLYCTL_INSTALL='/home/codespace/.fly'" >> ~/.profile
+export FLYCTL_INSTALL="/home/codespace/.fly"
 
-echo "PATH='$FLYCTL_INSTALL/bin:$PATH'" >> ~/.profile
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
